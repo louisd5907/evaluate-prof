@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-menu, .nav-menu * {
+	list-style: none;
+}
+
+.nav-menu > ul > li {
+	position: relative;
+	white-space: nowrap;
+	float: right;
+}
+
+.mr-auto, .mx-auto {
+	margin-right: auto !important;
+}
+
+.nav-menu a {
+	display: block;
+	position: relative;
+	color: tomato;
+	padding: 20px 15px;
+	transition: 0.3s;
+	font-size: 13px;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+	background: tomato;
+    opacity: 0.7;
+	text-decoration: none;
+    color: white;
+}
+.noterunprof{
+    border: tomato 1px solid;
+}
+
+.logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 36px;
+    color: tomato;
+}
+body {
+    margin: 0;
+}
+
+main {
+    margin: 0;
+    text-align: center;
+}
+
+.imghead {
+    width: 100%;
+    margin-top: 0;
+    height: 90vh;
+}
+.overlay {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay h1, .overlay p {
+    color: black;
+}
+
+.overlay h1 {
+    font-size: 70px;
+    margin-top: 0px;
+}
+
+.overlay p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.overlay h1 span {
+    color: tomato;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.overlay p strong {
+    color: tomato;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.donneravis{
+    color: black;
+    text-decoration: none;
+}
+
+#logonav :hover{
+    background-color: white;
+    color: tomato;
+}

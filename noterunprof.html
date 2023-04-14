@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="noterunprof.css">
+
+            <title>NoteMyProfs</title>
+            <link rel="icon" type="image/png" href="./media/Iconweb.png">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+
+
+
+    </head>
+    <body class="padding" ng-controller="PopupCtrl">
+        <nav class="nav-menu d-none d-lg-block">
+            <li><div class="logo">NoteMyProfs</div></li>
+            <ul>
+            <li><a href="connexionprof.html"class="noterunprof">Je suis professeur</a></li>
+            <li><a href="noterunprof.html">Noter un prof</a></li>
+            <li><a href="index.html">Acceuil</a></li>
+
+            </ul>
+        </nav>
+  <div id="form">
+     
+    <h1 class="Louis">Noter un professeur</h1>
+  
+    <p class="choose-email">&#x26A0; Ceci est anonyme &#x26A0;</p>
+    
+    <div class="inputs">
+      <select id="profList">
+        <option disabled selected>Choisissez votre professeur</option>
+        <!-- <option>Mme Belkadi (LV1)</option>
+        <option>Mr Cauche (Math)</option>
+        <option>Mme Sbahi (Français)</option>
+        <option>Mme Loddo (LV2)</option>
+        <option>Mme Lucas (SVT)</option>
+        <option>Mr Cordouan (PackN)</option>
+        <option>Mr Massemin (SNT)</option>
+        <option>Mr Dewaele (Physique)</option>
+        <option>Mme Ben Hafedh (Chimie)</option>
+        <option>Mr Patry (EPS)</option>
+        <option>Mr Gardin (SNT)</option>
+        <option>Mr Kabeya (PackN)</option>
+        <option>Mr Segre (PackA)</option>
+        <option>Mr Hembert (Histoire / Géo)</option>
+        <option>Mr Gaba (SES)</option>
+        <option>Mr Quéval (PackA)</option> -->
+      </select>
+      <input type="number" placeholder="Note sur 5*" max="5" min="1" id="note"><p class="spannumber">*Attention la note est sur 5</p>
+      <textarea type="textarea" placeholder="commentaire" id="comment"></textarea>
+    </div>
+    
+    <p class="inscription">Ce questionnaire est <span>sérieux</span>. Merci d'y répondre avec <span>respect</span>.</p>
+    <div align="center">
+      <button type="button" class="bouttonsend" onclick="noter()">envoyer ma réponse</button>
+    </div>
+  </div>
+</body>
+<div class="footer-clean">
+  <footer>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Lieux</h3>
+                  <ul>
+                      <li><a href="#">Buawei</a></li>
+                      <li><a href="#">Lycée EIC</a></li>
+                      <li><a href="#">House</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>À propos</h3>
+                  <ul>
+                      <li><a href="#">Condition d'utilisation</a></li>
+                      <li><a href="#">Tweeter</a></li>
+                      <li><a href="#"></a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Navigation</h3>
+                  <ul>
+                      <li><a href="#">Acceuil</a></li>
+                      <li><a href="#">Noter un professeur</a></li>
+                      <li><a href="#">Je suis prof !</a></li>
+                  </ul>
+              </div>
+
+                  <p class="copyright">©2023; NoteMyProfs</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+    <script src="./profs.js"></script>
+    <script src="./noterprof.js"></script>
+    </body>
+</html>
